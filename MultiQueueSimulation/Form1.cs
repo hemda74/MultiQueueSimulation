@@ -36,7 +36,7 @@ namespace MultiQueueSimulation
             dataGridView1.DataSource = mysystem.SimulationTable;
             //show simulation table
             add_servers_combobox();
-            string testonobj = TestingManager.Test(mysystem, Constants.FileNames.TestCase2);
+            string testonobj = TestingManager.Test(mysystem, Constants.FileNames.TestCase1);
 
             MessageBox.Show(testonobj);
             
@@ -44,7 +44,7 @@ namespace MultiQueueSimulation
         // reading data from test cases file
         public void readData_buildsmallTable()
         {
-            FileStream fs = new FileStream("TestCase2.txt", FileMode.Open);
+            FileStream fs = new FileStream("TestCase1.txt", FileMode.Open);
               StreamReader  sr  =  new  StreamReader(fs);
             while (sr.Peek() != -1)
             {
@@ -122,8 +122,6 @@ namespace MultiQueueSimulation
                         row.MaxRange = (int)(lastprop * 100); 
                         mysystem.InterarrivalDistribution.Add(row);
                     }
-
-
                 }
                 // calculate Time Distribution for each server
                 else if (my_Line.Contains("ServiceDistribution_Server"))
@@ -131,14 +129,11 @@ namespace MultiQueueSimulation
                     for (int i = 0; i < mysystem.NumberOfServers; i++)
                     {   
                          Server servobj = new Server(i+1);
-                         
-                          
                         servobj.FinishTime = 0;
                           
                         decimal lastprop = 0;
                         while (true)
                         {
-
                             string line = sr.ReadLine();
                             if ( line  ==  ""  ||  line  ==  null )
                             {
@@ -176,7 +171,6 @@ namespace MultiQueueSimulation
             }
             fs.Close();
         }
-
         void build_SimulationTable()
         {
             int cid = 0;
