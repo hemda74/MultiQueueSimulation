@@ -14,4 +14,12 @@
 
 ### System Calculate different probabilities
 
-#### Average Service Time
+#### 1- For Each Server
+
+##### Average Service Time
+
+##### Idle Probability
+
+##### Utilization
+
+#### For System
