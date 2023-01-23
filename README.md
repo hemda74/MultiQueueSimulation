@@ -12,7 +12,7 @@
 
 #### 3- Least Utilization
 
-### System Calculate different probabilities
+### System Calculate different performance probabilities
 
 #### 1- For Each Server
 
@@ -23,3 +23,16 @@
 ##### Utilization
 
 #### For System
+
+##### Waiting Probability
+
+##### Average Waiting Time
+
+##### Max Queue Length
+
+## ScreenShotes For Run
+
+<img src="./1.png" width=1000px Height=300px></img>
+<img src="./2.png" width=1000px Height=300px></img>
+<img src="./3.png" width=1000px Height=300px></img>
+<img src="./4.png" width=1000px Height=300px></img>
