@@ -8,7 +8,7 @@
 
 #### 1- Random (choose Server Randomly)
 
-#### 2- Highest Priority (Choose the Highest Priority Server when different server is avaliable)
+#### 2- Highest Priority (Choose the Highest Priority Server when different servers are avaliable)
 
 #### 3- Least Utilization
 
